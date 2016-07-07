@@ -1,0 +1,22 @@
+<% if params[:controller] == 'about' %>
+	<div class="well">
+		<h3>Location Info</h3>
+		<ul>
+			<li>Tho Bookstore</li>
+			<li>100 LSQ</li>
+			<li>Beijing, CY, 100012</li>
+			<li>Phone: 0000000 </li>
+			<li>Email: support@bookstore.com</li>
+		</ul>
+	</div>
+<% end %>
+
+
+<% if params[:controller] == 'books' &&  (params[:action] == 'index' || params[:action] == 'show' ) %>
+
+	<div class="list-group">
+		<% @categories.each do |category| %>
+			<%= link_to category.name, category_path(category.id), class: 'list-group-item' %>
+		<% end %>
+	</div>
+<% end %>
