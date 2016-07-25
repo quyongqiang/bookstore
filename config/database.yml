@@ -11,10 +11,11 @@ default: &default
 
 development:
   <<: *default
-  adapter: mysql2
+  adapter: postgresql
+  encoding: unicode
   database: bookstore_development
-  username: bookstore
-  password: bookstore
+  # username: bookstore
+  # password: bookstore
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

@@ -1,1 +1,1 @@
-rails s -p 3005
+rails s -p 3005 -b 0.0.0.0
