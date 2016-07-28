@@ -45,3 +45,9 @@ environment ENV.fetch("RAILS_ENV") { "production" }
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
+
+daemonize true
+stdout_redirect './log/puma.log', './log/puma.err'
+pidfile './log/puma.pid'
+state_path './log/puma.state'
+bind 'unix://./log/puma.sock'

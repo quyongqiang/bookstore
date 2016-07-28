@@ -14,7 +14,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: bookstore_development
-  # username: bookstore
+  username: postgres
   # password: bookstore
 
 # Warning: The database defined as "test" will be erased and
@@ -30,4 +30,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: bookstore_development
+  username: postgres
