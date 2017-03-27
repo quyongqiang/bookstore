@@ -1,26 +1,26 @@
-# README
+# Bookstore
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bookstore is a bookstore app, developed using Ruby on Rails.
 
-Things you may want to cover:
 
-* Ruby version
+## Ruby version
+```
 ruby 2.3.1
 rails 5.0
+```
 
-* System dependencies
+## Database initialization
+```
+$ rake db:create
+$ rake db:migrate
+```
 
-* Configuration
+* Run the test suite
+```
+# start the server
+$ rails s
+```
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+MIT
