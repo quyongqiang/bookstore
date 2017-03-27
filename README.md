@@ -9,13 +9,20 @@ ruby 2.3.1
 rails 5.0
 ```
 
-## Database initialization
+## Setting Up
 ```
-$ rake db:create
-$ rake db:migrate
+git clone https://github.com/netqyq/bookstore
+cd bookstore
+bundle install
 ```
 
-* Run the test suite
+## Database initialization
+```
+rake db:create
+rake db:migrate
+```
+
+## Run the test suite
 ```
 # start the server
 $ rails s
