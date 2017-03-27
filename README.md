@@ -1,6 +1,6 @@
 # Bookstore
 
-Bookstore is a bookstore app, developed using Ruby on Rails.
+Bookstore is a bookstore app, it is developed using Ruby on Rails.
 
 
 ## Ruby version
@@ -22,10 +22,9 @@ rake db:create
 rake db:migrate
 ```
 
-## Run the test suite
+## Start the server
 ```
-# start the server
-$ rails s
+rails s
 ```
 
 
